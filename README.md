@@ -1,6 +1,6 @@
 # fizzbuzz-go
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![Maintainability](https://api.codeclimate.com/v1/badges/4151f350ea03f3b30824/maintainability)](https://codeclimate.com/github/mikeee/fizzbuzz-go/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/4151f350ea03f3b30824/test_coverage)](https://codeclimate.com/github/mikeee/fizzbuzz-go/test_coverage)
 
 buzz... fizz?
 

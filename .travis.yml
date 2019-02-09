@@ -1,0 +1,17 @@
+language: go
+
+go:
+  - 1.10.x
+  - 1.11.x
+
+before_install:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+  - go get -v ./...
+
+script:
+  - go test -coverprofile c.out ./...
+
+after_install:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
