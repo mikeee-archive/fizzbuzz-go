@@ -13,5 +13,5 @@ before_install:
 script:
   - go test -coverprofile c.out ./...
 
-after_install:
+after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
