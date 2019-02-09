@@ -43,13 +43,13 @@ func main() {
 		x, _ := strconv.Atoi(input)
 		fmt.Println(fizzbuzz.Check(x))
 	case 3:
-		seed := time.Now().Unix()
+		seed := time.Now().Unix() // seed based on the time
 		random := rand.NewSource(seed)
 		getRandom := rand.New(random)
 		number := getRandom.Intn(9999)
 		fmt.Printf("[%d] %s \n", number, fizzbuzz.Check(number))
 	default:
-		fmt.Println("Invalid option selected... exiting application")
+		fmt.Println("Invalid option selected... computer says no.")
 	}
 	fmt.Println("Au Revoir... until next time 👋")
 }
