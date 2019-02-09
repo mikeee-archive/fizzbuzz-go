@@ -13,6 +13,16 @@ Fizz buzz is a simple game that replaces multiples of 3 and 5 with Fizz or Buzz,
 
 ## Usage
 
+### Standalone
+
+A simple example application has been included in `./cmd/fizzbuzz/` to run it simply run:
+
+```bash
+go run ./cmd/fizzbuzz/main.go
+```
+
+### Imported package
+
 Assuming that you have Golang installed, you can import the package using the following command.
 
 ```bash
