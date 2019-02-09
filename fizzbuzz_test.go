@@ -1,10 +1,12 @@
 package fizzbuzz_test
 
 import (
-	"github.com/mikeee/fizzbuzz"
 	"testing"
+
+	"github.com/mikeee/fizzbuzz-go"
 )
 
+// TestCheck confirms the fizzbuzz logic is correct
 func TestCheck(t *testing.T) {
 	tests := []struct {
 		value  int
@@ -21,7 +23,7 @@ func TestCheck(t *testing.T) {
 	for _, test := range tests {
 		fbresult := fizzbuzz.Check(test.value)
 		if fbresult != test.expect {
-			t.Errorf("Result incorrect, input: %d, got: %d, wanted:%d", test.value, fbresult, test.expect)
+			t.Errorf("Result incorrect, input: %d, got: %s, wanted:%s", test.value, fbresult, test.expect)
 		}
 	}
 }
